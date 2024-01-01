@@ -13,7 +13,7 @@ async fn main() -> WebDriverResult<()> {
 
     driver.screenshot(Path::new("./test.png")).await?;
 
-    // #email
+    //
     let email_field = driver.find(By::Id("email")).await?;
     email_field.send_keys("test").await?;
 
